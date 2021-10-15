@@ -46,19 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculo de Interesess.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Calculo de Interesess.Designer.cs">
-      <DependentUpon>Calculo de Interesess.cs</DependentUpon>
-    </Compile>
     <Compile Include="Calculo_Intereses.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Calculo_Intereses.Designer.cs">
+      <DependentUpon>Calculo_Intereses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Calculo de Interesess.resx">
-      <DependentUpon>Calculo de Interesess.cs</DependentUpon>
+    <EmbeddedResource Include="Calculo_Intereses.resx">
+      <DependentUpon>Calculo_Intereses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
