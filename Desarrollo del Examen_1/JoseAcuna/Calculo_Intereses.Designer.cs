@@ -153,6 +153,7 @@ namespace JoseAcuna
             this.Controls.Add(this.label1);
             this.Name = "Calculo_Intereses";
             this.Text = "Calculo_De_Intereses";
+            this.Load += new System.EventHandler(this.Calculo_Intereses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

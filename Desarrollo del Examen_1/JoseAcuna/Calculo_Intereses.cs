@@ -80,5 +80,10 @@ namespace JoseAcuna
             PeriodoTextBox.Clear();
             InteresTextBox.Clear();
         }
+
+        private void Calculo_Intereses_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
