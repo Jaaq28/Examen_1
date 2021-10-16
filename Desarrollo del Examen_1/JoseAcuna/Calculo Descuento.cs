@@ -85,6 +85,12 @@ namespace JoseAcuna
             TotalTextBox.Text = CalcularProducto(Convert.ToInt32(Precio), Convert.ToInt32(TotalTextBox.Text)).ToString();
 
         }
+
+        private void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            TotalTextBox.Clear();
+            DescuentoTextBox.Clear();
+        }
     }
 
 }

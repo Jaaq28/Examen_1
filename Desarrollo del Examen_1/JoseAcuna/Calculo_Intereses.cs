@@ -19,71 +19,119 @@ namespace JoseAcuna
 
         private void CalcularButton_Click(object sender, EventArgs e)
         {
-            capital();
+            Interes();
 
         }
-         
-        public double CalcularInteres(double a, double b, double c) 
+        private void Interes()
         {
-            double total, total1 = 0;
-            double t = b / 100;
-            for (int d=0; d < c; d++) 
-            {
-                total = a * t;
-                total1 = total1 + total;
-            }
-            return total1;
+
+            string Primero = Convert.ToString("En el Mes de Enero se gano un interes de       L   " + Enero());
+            string Segundo = Convert.ToString("En el Mes de Febrero se gano un interes de    L   " + Febrero());
+            string Tercero = Convert.ToString("En el Mes de Marzo se gano un interes de      L   " + Marzo());
+            string Cuarto = Convert.ToString("En el Mes de Abril se gano un interes de         L   " + Abril());
+            string quinto = Convert.ToString("En el Mes de Mayo se gano un interes de       L   " + Mayo());
+            string Sexto = Convert.ToString("En el Mes de Junio se gano un interes de       L   " + Junio());
+            string Septimo = Convert.ToString("En el Mes de Julio se gano un interes de        L   " + Julio());
+            string Octavo = Convert.ToString("En el Mes de Agosto se gano un interes de      L   " + Agosto());
+            string Noveno = Convert.ToString("En el Mes de Septiembre se gano un interes de   L   " + Septiembre());
+            string Decimo = Convert.ToString("En el Mes de Octubre se gano un interes de       L  " + Octubre());
+            string Onceavo = Convert.ToString("En el Mes de Noviembre se gano un interes de    L   " + Noviembre());
+            string Doceavo = Convert.ToString("En el Mes de Diciembre se gano un interes de      L   " + Diciembre());
+
+
+            listBox1 .Items.Add(Primero); listBox1.Items.Add(Segundo);
+            listBox1.Items.Add(Tercero); listBox1.Items.Add(Cuarto);
+            listBox1.Items.Add(quinto); listBox1.Items.Add(Sexto);
+            listBox1.Items.Add(Septimo); listBox1.Items.Add(Octavo);
+            listBox1.Items.Add(Noveno); listBox1.Items.Add(Decimo);
+            listBox1.Items.Add(Onceavo); listBox1.Items.Add(Doceavo);
+
+
+            listBox1.DataSource = null;
         }
-        public void capital() 
+        private double Enero()
         {
-            double capital;
-            double interes;
-            double mes;
 
-
-            capital = Convert.ToDouble(DepositoTextBox.Text);
-            if (capital > 500000) 
-            {
-                MessageBox.Show(capital + "Capital Erroneo", "Advertencia", MessageBoxButtons.OK,MessageBoxIcon.Information);
-            }
-            else 
-            {
-                interes = Convert.ToDouble(InteresTextBox.Text);
-                if (interes > 1.5 || interes < 1) 
-                {
-                    MessageBox.Show(interes + "Tasa de Interes Erroneo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else 
-                {
-                    mes = Convert.ToDouble(PeriodoTextBox.Text);
-                    if (mes > 12 || mes < 1) 
-                    {
-                        MessageBox.Show(mes + "Numero de Mes Erroneo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else 
-                    {
-                        double x = CalcularInteres(capital, interes, mes);
-                        listBox1.Items.Add(NombreTextBox.Text);
-                        listBox1.Items.Add(x);
-                        listBox1.Items.Add(mes);
-                        double capt = x + capital;
-                        MessageBox.Show(" su capital tota es de " +  capt);
-                    }
-                }
-            }
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 1);
         }
+
+        private double Febrero()
+        {
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 2);
+        }
+
+        private double Marzo()
+        {
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 3);
+        }
+
+        private double Abril()
+        {
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 4);
+        }
+
+        private double Mayo()
+        {
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 5);
+        }
+
+        private double Junio()
+        {int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 6);
+        }
+
+        private double Julio()
+        {
+            int capital  = Convert.ToInt32(DepositoTextBox.Text);
+            return ((capital * 0.015) * 7);
+        }
+
+        private double Agosto()
+        {
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 8);
+        }
+
+        private double Septiembre()
+        {int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 9);
+        }
+
+        private double Octubre()
+        {
+            int capital  = Convert.ToInt32(DepositoTextBox.Text);
+            return ((capital * 0.015) * 10);
+        }
+
+        private double Noviembre()
+        {
+            int Capital = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 11);
+        }
+
+        private double Diciembre()
+        {
+            int Capital  = Convert.ToInt32(DepositoTextBox.Text);
+            return ((Capital * 0.015) * 12);
+        }
+
+
 
         private void LimpiarButton_Click(object sender, EventArgs e)
         {
             NombreTextBox.Clear();
             DepositoTextBox.Clear();
-            PeriodoTextBox.Clear();
-            InteresTextBox.Clear();
+            
         }
 
         private void Calculo_Intereses_Load(object sender, EventArgs e)
         {
-
+            DepositoTextBox.Text = Convert.ToString("200000");
         }
     }
 }

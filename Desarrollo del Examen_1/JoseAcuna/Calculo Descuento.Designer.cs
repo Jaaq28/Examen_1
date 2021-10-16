@@ -105,6 +105,7 @@ namespace JoseAcuna
             this.LimpiarButton.TabIndex = 5;
             this.LimpiarButton.Text = "Limpiar";
             this.LimpiarButton.UseVisualStyleBackColor = true;
+            this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
             // 
             // TotalTextBox
             // 
