@@ -24,18 +24,19 @@ namespace JoseAcuna
         }
         public void Interes()
         {
-            string Primero = Convert.ToString("En el Mes de Enero se gano un interes de       L   " + Enero());
-            string Segundo = Convert.ToString("En el Mes de Febrero se gano un interes de    L   " + Febrero());
-            string Tercero = Convert.ToString("En el Mes de Marzo se gano un interes de      L   " + Marzo());
-            string Cuarto = Convert.ToString("En el Mes de Abril se gano un interes de         L   " + Abril());
-            string quinto = Convert.ToString("En el Mes de Mayo se gano un interes de       L   " + Mayo());
-            string Sexto = Convert.ToString("En el Mes de Junio se gano un interes de       L   " + Junio());
-            string Septimo = Convert.ToString("En el Mes de Julio se gano un interes de        L   " + Julio());
-            string Octavo = Convert.ToString("En el Mes de Agosto se gano un interes de      L   " + Agosto());
-            string Noveno = Convert.ToString("En el Mes de Septiembre se gano un interes de   L   " + Septiembre());
-            string Decimo = Convert.ToString("En el Mes de Octubre se gano un interes de       L  " + Octubre());
-            string Onceavo = Convert.ToString("En el Mes de Noviembre se gano un interes de    L   " + Noviembre());
-            string Doceavo = Convert.ToString("En el Mes de Diciembre se gano un interes de      L   " + Diciembre());
+            string Nombre = NombreTextBox.Text;
+            string Primero = Convert.ToString(Nombre + "  En el Mes de Enero se gano un interes de       L   " + Enero());
+            string Segundo = Convert.ToString(Nombre + "  En el Mes de Febrero se gano un interes de    L   " + Febrero());
+            string Tercero = Convert.ToString(Nombre + "  En el Mes de Marzo se gano un interes de      L   " + Marzo());
+            string Cuarto = Convert.ToString(Nombre + "  En el Mes de Abril se gano un interes de         L   " + Abril());
+            string quinto = Convert.ToString(Nombre +  " En el Mes de Mayo se gano un interes de       L   " + Mayo());
+            string Sexto = Convert.ToString(Nombre + "  En el Mes de Junio se gano un interes de       L   " + Junio());
+            string Septimo = Convert.ToString(Nombre + " En el Mes de Julio se gano un interes de        L   " + Julio());
+            string Octavo = Convert.ToString(Nombre + "  En el Mes de Agosto se gano un interes de      L   " + Agosto());
+            string Noveno = Convert.ToString(Nombre + " En el Mes de Septiembre se gano un interes de   L   " + Septiembre());
+            string Decimo = Convert.ToString(Nombre + " En el Mes de Octubre se gano un interes de       L  " + Octubre());
+            string Onceavo = Convert.ToString(Nombre + " En el Mes de Noviembre se gano un interes de    L   " + Noviembre());
+            string Doceavo = Convert.ToString(Nombre + " En el Mes de Diciembre se gano un interes de      L   " + Diciembre());
 
 
             listBox1 .Items.Add(Primero); listBox1.Items.Add(Segundo);
@@ -125,12 +126,13 @@ namespace JoseAcuna
         {
             NombreTextBox.Clear();
             DepositoTextBox.Clear();
+            listBox1.Items.Clear();
             
         }
 
         private void Calculo_Intereses_Load(object sender, EventArgs e)
         {
-            DepositoTextBox.Text = Convert.ToString("200000");
+            
         }
     }
 }
