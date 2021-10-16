@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculo Descuento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculo Descuento.Designer.cs">
+      <DependentUpon>Calculo Descuento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculo_Intereses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Calculo_Intereses.Designer.cs">
       <DependentUpon>Calculo_Intereses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Multiplos%28ejercicio3%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multiplos%28ejercicio3%29.Designer.cs">
+      <DependentUpon>Multiplos%28ejercicio3%29.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Calculo Descuento.resx">
+      <DependentUpon>Calculo Descuento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Calculo_Intereses.resx">
       <DependentUpon>Calculo_Intereses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multiplos%28ejercicio3%29.resx">
+      <DependentUpon>Multiplos%28ejercicio3%29.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
