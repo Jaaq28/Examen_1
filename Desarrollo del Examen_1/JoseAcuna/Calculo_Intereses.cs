@@ -22,9 +22,8 @@ namespace JoseAcuna
             Interes();
 
         }
-        private void Interes()
+        public void Interes()
         {
-
             string Primero = Convert.ToString("En el Mes de Enero se gano un interes de       L   " + Enero());
             string Segundo = Convert.ToString("En el Mes de Febrero se gano un interes de    L   " + Febrero());
             string Tercero = Convert.ToString("En el Mes de Marzo se gano un interes de      L   " + Marzo());
@@ -49,72 +48,72 @@ namespace JoseAcuna
 
             listBox1.DataSource = null;
         }
-        private double Enero()
+        public double Enero()
         {
 
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 1);
         }
 
-        private double Febrero()
+        public double Febrero()
         {
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 2);
         }
 
-        private double Marzo()
+        public double Marzo()
         {
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 3);
         }
 
-        private double Abril()
+        public double Abril()
         {
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 4);
         }
 
-        private double Mayo()
+        public double Mayo()
         {
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 5);
         }
 
-        private double Junio()
+        public double Junio()
         {int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 6);
         }
 
-        private double Julio()
+        public double Julio()
         {
             int capital  = Convert.ToInt32(DepositoTextBox.Text);
             return ((capital * 0.015) * 7);
         }
 
-        private double Agosto()
+        public double Agosto()
         {
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 8);
         }
 
-        private double Septiembre()
+        public double Septiembre()
         {int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 9);
         }
 
-        private double Octubre()
+        public double Octubre()
         {
             int capital  = Convert.ToInt32(DepositoTextBox.Text);
             return ((capital * 0.015) * 10);
         }
 
-        private double Noviembre()
+        public double Noviembre()
         {
             int Capital = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 11);
         }
 
-        private double Diciembre()
+        public double Diciembre()
         {
             int Capital  = Convert.ToInt32(DepositoTextBox.Text);
             return ((Capital * 0.015) * 12);
