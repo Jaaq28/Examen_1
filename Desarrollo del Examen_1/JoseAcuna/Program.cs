@@ -16,7 +16,7 @@ namespace JoseAcuna
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Calculo_Intereses());
+            Application.Run(new Calculo_Descuento());
         }
     }
 }

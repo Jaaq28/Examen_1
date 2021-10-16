@@ -27,9 +27,9 @@ namespace JoseAcuna
 
         }
 
-        private void CalcularButton_Click(object sender, EventArgs e)
+        private async void CalcularButton_Click(object sender, EventArgs e)
         {
-      
+            DescuentoTextBox.Text = Convert.ToString(await Descuento(Convert.ToDecimal(TotalTextBox.Text), 0.15M));
         }
 
         int Precio;
@@ -85,6 +85,16 @@ namespace JoseAcuna
             TotalTextBox.Text = CalcularProducto(Convert.ToInt32(Precio), Convert.ToInt32(TotalTextBox.Text)).ToString();
 
         }
+        public async Task<decimal> Descuento(decimal Digito1, decimal Digito2)
+        {
+            decimal descuento = await Task.Run(() =>
+            {
+                return Digito1 - (Digito1 * Digito2);
+            });
+            return descuento;
+        }
+
+
 
         private void LimpiarButton_Click(object sender, EventArgs e)
         {
